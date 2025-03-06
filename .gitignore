@@ -23,3 +23,4 @@ app/themes/truebpm-theme/dist/theme.css
 truebpm-extension-library/.metadata/
 
 .vs/
+/app/h2_database
