@@ -10,13 +10,13 @@
     <description>REST API to manage resourceName</description>
 
     <properties>
-        <!-- Maven -->
+       
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.build.timestamp.format>yyyy.MM.dd-hh.mm</maven.build.timestamp.format>
 
-        <!-- Bonita -->
+  
         <bonita-runtime.version>8.0.0</bonita-runtime.version>
 
         <!-- Test -->
@@ -24,7 +24,7 @@
         <byte-buddy.version>1.12.19</byte-buddy.version>
         <logback-classic.version>1.2.11</logback-classic.version>
 
-        <!-- Maven plugins -->
+        
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven-assembly-plugin.version>3.4.2</maven-assembly-plugin.version>
@@ -49,7 +49,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- Bonita -->
+     
         <dependency>
             <groupId>org.bonitasoft.web</groupId>
             <artifactId>bonita-web-extensions</artifactId>
@@ -61,7 +61,7 @@
             <artifactId>groovy-json</artifactId>
             <scope>provided</scope>
         </dependency>
-        <!-- You may add more Groovy modules if required, see https://groovy-lang.org/documentation.html#groovymoduleguides -->
+       
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -93,11 +93,7 @@
             <version>${logback-classic.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy-all</artifactId>
-            <version>2.4.5</version>
-        </dependency>
+    
     </dependencies>
     
     <build>
@@ -142,21 +138,13 @@
                         <artifactId>groovy-eclipse-compiler</artifactId>
                         <version>${groovy-eclipse-compiler.version}</version>
                     </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-eclipse-compiler</artifactId>
-                        <version>2.9.2-01</version>
-                    </dependency>
+             
                     <dependency>
                         <groupId>org.codehaus.groovy</groupId>
                         <artifactId>groovy-eclipse-batch</artifactId>
                         <version>${groovy-eclipse-batch.version}</version>
                     </dependency>
-                    <dependency>
-                        <groupId>org.codehaus.groovy</groupId>
-                        <artifactId>groovy-eclipse-batch</artifactId>
-                        <version>2.4.3-01 </version>
-                    </dependency>
+          
                 </dependencies>
                 <configuration>
                     <compilerId>groovy-eclipse-compiler</compilerId>

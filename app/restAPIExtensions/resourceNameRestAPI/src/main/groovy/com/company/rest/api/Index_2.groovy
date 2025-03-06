@@ -1,4 +1,4 @@
-package com.company.rest.api2
+package com.company.rest.api
 
 import groovy.json.JsonBuilder
 import javax.servlet.http.HttpServletRequest
@@ -11,7 +11,7 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import java.time.LocalDate
 
-class Index implements RestApiController {
+class Index_2 implements RestApiController {
 
 
 
