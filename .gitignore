@@ -1,0 +1,25 @@
+bin
+.classpath
+.settings
+target/
+.flattened-pom.xml
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
+
+.idea/
+truebpm.iml
+
+app/.store/
+
+deployment/Build Custom Images/BonitaCommunity-2023.1-u0.zip
+
+deployment/Build Custom Images/bonita-update-tool-3.2.0.zip
+
+deployment/Build Custom Images/BonitaCommunity-2023.1-u0/
+
+truebpm-extension-library/src/test/results/
+
+app/themes/truebpm-theme/dist/theme.css
+truebpm-extension-library/.metadata/
+
+.vs/
