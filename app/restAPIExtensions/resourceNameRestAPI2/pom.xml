@@ -73,14 +73,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- BDM model dependency -->
-        <dependency>
-            <groupId>com.company</groupId>
-            <artifactId>quy-trinh-phe-duyet-on-xin-nghi-phep-bdm-model</artifactId>
-            <version>0.0.1</version>
-            <scope>provided</scope>
-        </dependency>
-
 
         <!-- Test -->
         <dependency>
