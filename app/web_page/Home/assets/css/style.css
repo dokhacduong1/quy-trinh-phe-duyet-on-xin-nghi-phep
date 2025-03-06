@@ -1,0 +1,75 @@
+/* Add margin bottom and top to each widgets */
+/* .component {
+    margin-bottom: 3px;
+    margin-top: 3px;
+} */
+
+/* Set cursor to pointer on table with selectable rows */
+.table-hover tr {
+    cursor: pointer;
+}
+
+/* Set a red border to invalid input fields in forms */
+input[type='text'].ng-invalid.ng-dirty, input[type='email'].ng-invalid.ng-dirty,
+input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-dirty {
+  border-color: #C00;
+  border-width: 1px;
+}
+
+/* Add a red star after required inputs */
+.control-label--required:after {
+  content: " *";
+  color: #C00;
+}
+.btn-invalid{
+    border-color: #C00;
+    border-width: 1px;
+}
+
+.bonita-modal{
+    overflow-y: auto;
+}
+
+.modal-open .datepicker,
+.modal-open .timepicker {
+    z-index: 9999;
+}
+
+
+.box-custom {
+    background: #fff;
+   
+  }
+  .box-custom .custom {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0,10,10,.05);
+    
+    border-radius: 10px;
+    padding: 2.5rem 2.5rem;
+    
+  }
+  .box-custom .box-icon{
+   
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-custom .box-icon img {
+    width: 50;
+    height: 50px;
+   color: #fff;
+   fill: #fff;
+  }
+  .box-custom .box-content h2 {
+    font-weight: 700;
+  }
+  p,
+  h2 {
+    margin: 0;
+  }
+  .mb-24{
+    margin-bottom: 24px !important;
+  }

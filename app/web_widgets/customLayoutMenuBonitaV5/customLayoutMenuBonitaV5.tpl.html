@@ -1,0 +1,134 @@
+<div class="navbar navbar-inverse navbar-inverse-menu main-navbar-menu" role="navigation">
+    <div class="container-fluid">
+
+        <!--Start Menu mobile-->
+        <div class="nav nav-menu-mobile">
+            <nav>
+                <a href="javascript:void(0);" class="mobile-menu-trigger" ng-click="ctrl.addClassMenu()">
+                    <button type="button" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </a>
+                <ul class="menu menu-bar" ng-class="{ 'remove-active-menu': isHighlightedMenu}">
+                    <button type="button" ng-click="ctrl.removeClassMenu()" class="icon-close-menu">
+                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </button>
+                    <li ng-repeat="menu in ctrl.filterChildren(-1)" ng-click="ctrl.activateItem(menu.displayName)">
+                        <a ng-if="!ctrl.isParentMenu(menu)" ng-click="ctrl.displayPage(menu.applicationPageId.token)"
+                            href="../{{menu.applicationPageId.token}}/" class="menu-link menu-bar-link menu-nav-link"><i
+                                class="fa fa-tag fa-6" aria-hidden="true"></i>
+                            {{menu.displayName | uiTranslate}}</a>
+                        <a href="javascript:void(0);" ng-if="ctrl.isParentMenu(menu)" class="menu-link menu-bar-link"
+                            aria-haspopup="true"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            {{menu.displayName | uiTranslate}} <span class="icon-right">❯</span></a>
+                        <ul class="mega-menu mega-menu--flat" ng-if="ctrl.isParentMenu(menu)">
+                            <li ng-repeat="childMenu in ctrl.filterChildren(menu.id)">
+                                <a ng-click="ctrl.displayPage(childMenu.applicationPageId.token)"
+                                    class="menu-link mega-menu-link mega-menu-header menu-nav-link"
+                                    href="../{{childMenu.applicationPageId.token}}/"><i class="fa fa-tag fa-6"
+                                        aria-hidden="true"></i> {{childMenu.displayName |
+                                    uiTranslate}}</a>
+                            </li>
+                            <li ng-if="ctrl.isHasBPM(menu.displayName)">
+                                <a href="javascript:void(0);" class="menu-link mega-menu-link mega-menu-header"><i
+                                        class="fa fa-file-text-o" aria-hidden="true"></i> BPM</a>
+                                <ul class="menu menu-list">
+                                    <li ng-repeat="childMenu in ctrl.filterChildrenForBPM()" class="last-child-menu">
+                                        <a href="../{{childMenu.applicationPageId.token}}/"
+                                            ng-click="ctrl.displayPage(childMenu.applicationPageId.token)"
+                                            class="menu-link menu-list-link menu-last menu-nav-link">
+                                            <i class="fa fa-tag fa-6" aria-hidden="true"></i> {{childMenu.displayName |
+                                            uiTranslate}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mobile-menu-back-item">
+                                <a href="javascript:void(0);" class="menu-link mobile-menu-back-link"><span
+                                        class="icon-left">❮</span>Back</a>
+                            </li>
+                            <button type="button" ng-click="ctrl.removeClassMenu()"
+                                class="icon-close-menu-v2 icon-close-menu">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                        </ul>
+                         <li>
+                            <a ng-href="https://password.truetech.com.vn/authorization.do" target="_self" class="menu-link menu-bar-link menu-nav-link link-change-pass"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Change my password</a>
+                        </li>
+                         <li>
+                            <a ng-href="{{properties.logoutURL}}" target="_self" class="menu-link menu-bar-link menu-nav-link link-sign-out"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign out</a>
+                        </li>
+                    </li>
+
+                    <li class="mobile-menu-header">
+                        <a class="navbar-brand link-logo visible-xs" href="javascript:void(0);">
+                            <!--{{ctrl.applicationName}}-->
+                            <!--<img src = "./widgets/customLayoutMenuBonitaV5/assets/img/logo.png?format=text" alt = "logo-truebpm" height = "38.5px" />-->
+                            <i title="{properties.userName}" class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            <p>{{properties.userName}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--End Menu mobile-->
+
+        <div class="navbar-header hide-mobile">
+            <a class="navbar-brand link-logo visible-xs" ng-click="ctrl.displayPage(properties.homePageToken)"
+                href="../{{properties.homePageToken}}/">
+                <!--{{ctrl.applicationName}}-->
+            </a>
+            <button type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed"
+                class="navbar-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div collapse="navCollapsed" class="collapse navbar-responsive-collapse navbar-collapse">
+            <ul class="nav navbar-nav" id="myDiv">
+                <li class="menu-level-0" ng-class="{ 'active': ctrl.pageToken=== menu.applicationPageId.token }"
+                    ng-repeat="menu in ctrl.filterChildren(-1)" ng-click="ctrl.activateItem(menu.displayName)">
+                    <a ng-if="!ctrl.isParentMenu(menu)" ng-click="ctrl.displayPage(menu.applicationPageId.token)"
+                        href="../{{menu.applicationPageId.token}}/"><span class="maxTitleWidth">{{menu.displayName |
+                            uiTranslate}}</span></a>
+                    <a ng-if="ctrl.isParentMenu(menu)" ng-class="{ 'active-parent': activeIndex === $index }"
+                        href="javascript:void(0);" dropdown-toggle>{{menu.displayName |
+                        uiTranslate}}<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul ng-if="ctrl.isParentMenu(menu)" class="dropdown-menu menu-level-ul-1">
+                        <li ng-repeat="childMenu in ctrl.filterChildren(menu.id)"
+                            ng-click="ctrl.activateSubItem($parent.$index, $index)">
+                            <a ng-click="ctrl.displayPage(childMenu.applicationPageId.token)"
+                                ng-class="{ 'active-child': activeIndex === $parent.$index && activeSubIndex === $index }"
+                                href="../{{childMenu.applicationPageId.token}}/">
+                                {{childMenu.displayName | uiTranslate}}
+                            </a>
+                        </li>
+
+                        <!-- BPM -->
+                        <li class="bpm-menu" ng-if="ctrl.isHasBPM(menu.displayName)">
+                            <span class="submenu-text">
+                                <div class="bpm-menu-content">
+                                    <div>BPM</div>
+                                    ❯
+                                </div>
+                            </span>
+                            <ul class="dropdown-menu bpm-submenu">
+                                <li ng-repeat="childMenu in ctrl.filterChildrenForBPM()"
+                                    ng-click="ctrl.activateSubItemLast($parent.$index,null, $index)">
+                                    <a ng-click="ctrl.displayPage(childMenu.applicationPageId.token)"
+                                        ng-class="{ 'active-child-lv3': activeIndex === $parent.$index && activeLastIndex === $index }"
+                                        href="../{{childMenu.applicationPageId.token}}/">
+                                        {{childMenu.displayName | uiTranslate}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

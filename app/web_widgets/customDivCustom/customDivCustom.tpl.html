@@ -1,0 +1,13 @@
+
+<div class="box-custom">
+  <div class="custom ">
+    <div class="box-icon" ng-style="{'background': properties.color}">
+      <img ng-src="{{properties.imageLogo}}"  alt="" />
+    </div>
+
+    <div class="box-content">
+      <h2 ng-style="{'color': properties.color}" ng-bind-html="properties.object.price | uiTranslate">250k</h2>
+      <p ng-bind-html="properties.object.status | uiTranslate">Sales</p>
+    </div>
+  </div>
+</div>

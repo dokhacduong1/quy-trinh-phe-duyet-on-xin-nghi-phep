@@ -1,0 +1,433 @@
+{
+  "id" : "Home",
+  "name" : "Home",
+  "type" : "page",
+  "uuid" : "2ca28691-be10-4e45-b13a-088fc89e4b9f",
+  "modelVersion" : "2.4",
+  "lastUpdate" : 1741228252273,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "df63eb0c-84d7-4806-81b7-f41b21a6d32e",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "e0c683c1-0d24-4de4-90d5-74fa6a2972df",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 3
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "c7c56ab4-4dc7-4e71-a56f-2961076e690b",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : "mb-24"
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "textH2" : {
+                          "type" : "interpolation",
+                          "value" : "250k"
+                        },
+                        "textP" : {
+                          "type" : "interpolation",
+                          "value" : "Sales"
+                        },
+                        "imageLogo" : {
+                          "type" : "interpolation",
+                          "value" : "https://www.svgrepo.com/show/532030/circle-heat.svg"
+                        },
+                        "color" : {
+                          "type" : "interpolation",
+                          "value" : "#f87957"
+                        },
+                        "object" : {
+                          "type" : "expression",
+                          "value" : "APiTest[0]"
+                        }
+                      },
+                      "reference" : "e920508b-951e-4780-b3ba-613eaa78c87c",
+                      "hasValidationError" : false,
+                      "id" : "customDivCustom"
+                    }
+                  ]
+                ]
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 3
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "c9ebb1bc-bcfc-44bf-b81e-e8cb8dbcdf1c",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : "mb-24"
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "textH2" : {
+                          "type" : "interpolation",
+                          "value" : "25k"
+                        },
+                        "textP" : {
+                          "type" : "interpolation",
+                          "value" : "Sales"
+                        },
+                        "imageLogo" : {
+                          "type" : "interpolation",
+                          "value" : "https://www.svgrepo.com/show/532030/circle-heat.svg"
+                        },
+                        "color" : {
+                          "type" : "interpolation",
+                          "value" : "#ffae1f"
+                        },
+                        "object" : {
+                          "type" : "expression",
+                          "value" : "APiTest[1]"
+                        }
+                      },
+                      "reference" : "da00d38d-8fdd-4857-aad9-400f3835560f",
+                      "hasValidationError" : false,
+                      "id" : "customDivCustom"
+                    }
+                  ]
+                ]
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 3
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "4e62888e-0d5d-4c1b-ac95-66ea1ada8824",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "textH2" : {
+                          "type" : "interpolation",
+                          "value" : "24m"
+                        },
+                        "textP" : {
+                          "type" : "interpolation",
+                          "value" : "Sales"
+                        },
+                        "imageLogo" : {
+                          "type" : "interpolation",
+                          "value" : "https://www.svgrepo.com/show/532030/circle-heat.svg"
+                        },
+                        "color" : {
+                          "type" : "interpolation",
+                          "value" : "#3688fa"
+                        },
+                        "object" : {
+                          "type" : "expression",
+                          "value" : "APiTest[2]"
+                        }
+                      },
+                      "reference" : "2d12d173-73c4-4273-8482-4116130bccdf",
+                      "hasValidationError" : false,
+                      "id" : "customDivCustom"
+                    }
+                  ]
+                ]
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 3
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "0cc64f02-f192-4e42-b194-e1082ef0b82a",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "textH2" : {
+                          "type" : "interpolation",
+                          "value" : "180m"
+                        },
+                        "textP" : {
+                          "type" : "interpolation",
+                          "value" : "Sales"
+                        },
+                        "imageLogo" : {
+                          "type" : "interpolation",
+                          "value" : "https://www.svgrepo.com/show/532030/circle-heat.svg"
+                        },
+                        "color" : {
+                          "type" : "interpolation",
+                          "value" : "#26ba4f"
+                        },
+                        "object" : {
+                          "type" : "expression",
+                          "value" : "APiTest[3]"
+                        }
+                      },
+                      "reference" : "71827997-8295-4b7a-907f-9149248d0df6",
+                      "hasValidationError" : false,
+                      "id" : "customDivCustom"
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
+        "reference" : "b0392437-047b-4603-a2f3-04cae4811651",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "xs" : 12,
+                "sm" : 12,
+                "md" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "src" : {
+                  "type" : "interpolation",
+                  "value" : ""
+                }
+              },
+              "reference" : "82aec043-16f4-40f0-b766-0c56a611f951",
+              "hasValidationError" : false,
+              "id" : "customBoxScript"
+            }
+          ]
+        ]
+      }
+    ]
+  ],
+  "variables" : {
+    "APiTest" : {
+      "type" : "url",
+      "value" : [
+        "../API/extension/resourceName"
+      ],
+      "exposed" : false
+    },
+    "test" : {
+      "type" : "expression",
+      "value" : [
+        "console.log(\"ok\", $data.APiTest)",
+        "return \"hello\";"
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "5188b726-0017-4331-b297-cfde8d461528",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "2abf2b43-b028-4945-a936-c4d2fbbda876",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "d18318ff-abe5-4ff5-a2f4-362ddb58a010",
+      "name" : "script_duong.js",
+      "type" : "js",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

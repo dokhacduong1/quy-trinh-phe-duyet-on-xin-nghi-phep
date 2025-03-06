@@ -1,0 +1,10 @@
+<div class="text-{{ properties.alignment }}">
+
+    <button
+        ng-if="!properties.allowHTML"
+        ng-class="'btn btn-' + properties.buttonStyle"
+        ng-click="ctrl.onSubmitCustom()"
+       type="submit" 
+        
+        ng-disabled="properties.disabled || ctrl.busy" ng-bind="properties.label | uiTranslate"></button>
+</div>
